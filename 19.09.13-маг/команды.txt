@@ -1,0 +1,78 @@
+login:                                  - логин
+pass:                                   - пароль
+cd название                             - вход в директорию   
+cd ..                                   - выход из директории   
+
+ssh um16 или ssh um64                   - соединение с другой машиной
+
+mc                                      - Midnight Commander (MC)
+
+exit или f10                            - выход из MC
+
+exit или logout                         - завершение сеанса 
+
+mqinfo, sinfo                           - информация о выполнении задач
+
+mpiset                                  - компилятор
+
+module load openmpi/intel64             - подключение компилятора
+
+mkill, scancel                          - удалить задачу 
+
+mqdel имя_задачи                        - выбросить задачу из очереди
+
+mpif77 -o program program.f             - компиляция на Форт_77
+
+mpif90 -o program program.f90           - компиляция на Форт_90
+
+mpicc -o program program.c              - компиляция на Cи
+
+make                                    - makefile для компиляции 
+
+mqrun -np 3 -maxtime 1 examp1         - запуск на 3 процессорах
+
+srun -n 3 -t 1 examp1                 - запуск на 3 процессорах
+
+Стрелками "вверх" и "вниз" можно возвращать команду
+
+
+http://www.parallel.uran.ru/sites/default/files/slurm.pdf
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

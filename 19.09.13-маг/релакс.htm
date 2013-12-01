@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0041)file://V:\buf_k\akimova\диплом\релакс.htm -->
+<!-- saved from url=(0041)file://V:\buf_k\akimova\диплом\релакс.htm --><!-- saved from url=(0041)file://V:\buf_k\akimova\диплом\релакс.htm --><HTML 
+xmlns="http://www.w3.org/TR/REC-html40" xmlns:v = 
+"urn:schemas-microsoft-com:vml" xmlns:o = 
+"urn:schemas-microsoft-com:office:office" xmlns:w = 
+"urn:schemas-microsoft-com:office:word"><HEAD><TITLE>Реализуйте параллельный алгоритм решения задачи Дирихле для двумерного уравнения Лапласа</TITLE>
+<META content="text/html; charset=windows-1251" http-equiv=Content-Type>
+<META content=Word.Document name=ProgId>
+<META content="MSHTML 5.00.2614.3500" name=GENERATOR>
+<META content="Microsoft Word 9" name=Originator><LINK 
+href="./релакс.files/filelist.xml" rel=File-List><LINK 
+href="./релакс.files/editdata.mso" rel=Edit-Time-Data><!--[if !mso]>
+<STYLE>v\:* {
+	BEHAVIOR: url(#default#VML)
+}
+o\:* {
+	BEHAVIOR: url(#default#VML)
+}
+w\:* {
+	BEHAVIOR: url(#default#VML)
+}
+.shape {
+	BEHAVIOR: url(#default#VML)
+}
+</STYLE>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Akimova Elena</o:Author>
+  <o:LastAuthor>Akimova Elena</o:LastAuthor>
+  <o:Revision>1</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2005-10-24T06:35:00Z</o:Created>
+  <o:LastSaved>2005-10-24T06:35:00Z</o:LastSaved>
+  <o:Pages>3</o:Pages>
+  <o:Words>557</o:Words>
+  <o:Characters>3178</o:Characters>
+  <o:Company>IMM</o:Company>
+  <o:Lines>26</o:Lines>
+  <o:Paragraphs>6</o:Paragraphs>
+  <o:CharactersWithSpaces>3902</o:CharactersWithSpaces>
+  <o:Version>9.3821</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<STYLE>P.MsoNormal {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 12pt; MARGIN: 0cm 0cm 0pt; mso-style-parent: ""; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+LI.MsoNormal {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 12pt; MARGIN: 0cm 0cm 0pt; mso-style-parent: ""; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+DIV.MsoNormal {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 12pt; MARGIN: 0cm 0cm 0pt; mso-style-parent: ""; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+DIV.Section1 {
+	page: Section1
+}
+</STYLE>
+</HEAD>
+<BODY lang=RU style="tab-interval: 35.4pt">
+<DIV class=Section1>
+<P class=MsoNormal 
+style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">Реализуйте 
+параллельный алгоритм решения задачи Дирихле для двумерного уравнения Лапласа. 
+Требуется найти функцию<!--[if gte vml 1]> <v:shapetype id=_x0000_t75 coordsize 
+= "21600,21600" o:preferrelative = "t" filled = "f" stroked = "f" path = 
+"m@4@5l@4@11@9@11@9@5xe" o:spt = "75"><v:stroke joinstyle = 
+"miter"></v:stroke><v:formulas><v:f eqn = 
+"if lineDrawn pixelLineWidth 0 "></v:f><v:f eqn = "sum @0 1 0 "></v:f><v:f eqn = 
+"sum 0 0 @1 "></v:f><v:f eqn = "prod @2 1 2 "></v:f><v:f eqn = 
+"prod @3 21600 pixelWidth "></v:f><v:f eqn = 
+"prod @3 21600 pixelHeight "></v:f><v:f eqn = "sum @0 0 1 "></v:f><v:f eqn = 
+"prod @6 1 2 "></v:f><v:f eqn = "prod @7 21600 pixelWidth "></v:f><v:f eqn = 
+"sum @8 21600 0 "></v:f><v:f eqn = "prod @7 21600 pixelHeight "></v:f><v:f eqn = 
+"sum @10 21600 0 "></v:f></v:formulas><v:path o:extrusionok = "f" 
+gradientshapeok = "t" o:connecttype = "rect"></v:path><o:lock v:ext="edit" 
+aspectratio = "t"></o:lock></v:shapetype><v:shape id=_x0000_i1025 
+style="HEIGHT: 20.25pt; WIDTH: 47.25pt" type = "#_x0000_t75" coordsize = 
+"21600,21600" alt = ""><v:imagedata src = "./Лаплас.files/image001.gif" o:href = 
+"node_que.files\image099018.gif"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=63 height=27
+src="./Лаплас.files/image001.gif" align=absMiddle v:shapes="_x0000_i1025"><![endif]>, 
+удовлетворяющую уравнению Лапласа:<o:p></o:p></P>
+<P class=MsoNormal 
+style="MARGIN-LEFT: 42.55pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><!--[if gte vml 1]><v:shape 
+id=_x0000_i1026 style="HEIGHT: 47.25pt; WIDTH: 162.75pt" type = "#_x0000_t75" 
+coordsize = "21600,21600" alt = ""><v:imagedata src = 
+"./Лаплас.files/image002.gif" o:href = 
+"node_que.files\image099019.gif"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=217 height=63
+src="./Лаплас.files/image002.gif" align=absMiddle v:shapes="_x0000_i1026"><![endif]>в 
+области<!--[if gte vml 1]> <v:shape id=_x0000_i1027 
+style="HEIGHT: 20.25pt; WIDTH: 156pt" type = "#_x0000_t75" coordsize = 
+"21600,21600" alt = ""><v:imagedata src = "./Лаплас.files/image003.gif" o:href = 
+"node_que.files\image099020.gif"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=208 height=27
+src="./Лаплас.files/image003.gif" align=absMiddle v:shapes="_x0000_i1027"><![endif]>и 
+граничным условиям: <o:p></o:p></P>
+<P class=MsoNormal 
+style="MARGIN-LEFT: 42.55pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><!--[if gte vml 1]><v:shape 
+id=_x0000_i1028 style="HEIGHT: 20.25pt; WIDTH: 123pt" type = "#_x0000_t75" 
+coordsize = "21600,21600" alt = ""><v:imagedata src = 
+"./Лаплас.files/image004.gif" o:href = 
+"node_que.files\image099021.gif"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=164 height=27
+src="./Лаплас.files/image004.gif" align=absMiddle v:shapes="_x0000_i1028"><![endif]>,<!--[if gte vml 1]> 
+<v:shape id=_x0000_i1029 style="HEIGHT: 18.75pt; WIDTH: 57.75pt" type = 
+"#_x0000_t75" coordsize = "21600,21600" alt = ""><v:imagedata src = 
+"./Лаплас.files/image005.gif" o:href = 
+"node_que.files\image099022.gif"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=77 height=25
+src="./Лаплас.files/image005.gif" align=absMiddle v:shapes="_x0000_i1029"><![endif]>,<o:p></o:p></P>
+<P class=MsoNormal 
+style="MARGIN-LEFT: 42.55pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><!--[if gte vml 1]><v:shape 
+id=_x0000_i1030 style="HEIGHT: 20.25pt; WIDTH: 120.75pt" type = "#_x0000_t75" 
+coordsize = "21600,21600" alt = ""><v:imagedata src = 
+"./Лаплас.files/image006.gif" o:href = 
+"node_que.files\image099023.gif"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=161 height=27
+src="./Лаплас.files/image006.gif" align=absMiddle v:shapes="_x0000_i1030"><![endif]>,<!--[if gte vml 1]> 
+<v:shape id=_x0000_i1031 style="HEIGHT: 15.75pt; WIDTH: 57pt" type = 
+"#_x0000_t75" coordsize = "21600,21600" alt = ""><v:imagedata src = 
+"./Лаплас.files/image007.gif" o:href = 
+"node_que.files\image099025.gif"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=76 height=21
+src="./Лаплас.files/image007.gif" align=absMiddle v:shapes="_x0000_i1031"><![endif]>.<o:p></o:p></P>
+<P class=MsoNormal 
+style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">Для численного 
+решения данной задачи требуется построить равномерную сетку в области<!--[if gte vml 1]> <v:shape id=_x0000_i1032 
+style="HEIGHT: 15pt; WIDTH: 15.75pt" type = "#_x0000_t75" coordsize = 
+"21600,21600" alt = ""><v:imagedata src = "./Лаплас.files/image008.gif" o:href = 
+"node_que.files\image099011.gif"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=21 height=20
+src="./Лаплас.files/image008.gif" align=absMiddle v:shapes="_x0000_i1032"><![endif]>. 
+Систему линейных уравнений, полученных после аппроксимации дифференциальной 
+задачи конечно-разностной, можно решать итерационным методом Якоби, который 
+имеет максимальную степень параллелизма, либо методом Гаусса-Зейделя или верхней 
+релаксации [44].<o:p></o:p></P>
+<P class=MsoNormal 
+style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">В случае 
+использования метода верхней релаксации используется следующая вычислительная 
+схема:<o:p></o:p></P>
+<P class=MsoNormal 
+style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><!--[if gte vml 1]><v:shape 
+id=_x0000_i1033 style="HEIGHT: 39.75pt; WIDTH: 324.75pt" type = "#_x0000_t75" 
+coordsize = "21600,21600" alt = ""><v:imagedata src = 
+"./Лаплас.files/image009.gif" o:href = 
+"node_que.files\image099026.gif"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=433 height=53
+src="./Лаплас.files/image009.gif" align=absMiddle v:shapes="_x0000_i1033"><![endif]>,<o:p></o:p></P>
+<P class=MsoNormal 
+style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">где<!--[if gte vml 1]> 
+<v:shape id=_x0000_i1034 style="HEIGHT: 20.25pt; WIDTH: 198.75pt" type = 
+"#_x0000_t75" coordsize = "21600,21600" alt = ""><v:imagedata src = 
+"./Лаплас.files/image010.gif" o:href = 
+"node_que.files\image099027.gif"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=265 height=27
+src="./Лаплас.files/image010.gif" align=absMiddle v:shapes="_x0000_i1034"><![endif]>,<!--[if gte vml 1]> 
+<v:shape id=_x0000_i1035 style="HEIGHT: 12.75pt; WIDTH: 15pt" type = 
+"#_x0000_t75" coordsize = "21600,21600" alt = ""><v:imagedata src = 
+"./Лаплас.files/image011.gif" o:href = 
+"node_que.files\image099028.gif"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=20 height=17
+src="./Лаплас.files/image011.gif" align=absMiddle v:shapes="_x0000_i1035"><![endif]>- 
+параметр верхней релаксации (при<!--[if gte vml 1]> <v:shape id=_x0000_i1036 
+style="HEIGHT: 15.75pt; WIDTH: 38.25pt" type = "#_x0000_t75" coordsize = 
+"21600,21600" alt = ""><v:imagedata src = "./Лаплас.files/image012.gif" o:href = 
+"node_que.files\image099029.gif"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=51 height=21
+src="./Лаплас.files/image012.gif" align=absMiddle v:shapes="_x0000_i1036"><![endif]>получаем 
+метод Гаусса-Зейделя).<o:p></o:p></P>
+<P class=MsoNormal 
+style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">Для построения 
+параллельного алгоритма решения задачи необходимо провести разбиение исходной 
+расчетной области на подобласти, количество которых соответствует количеству 
+задействованных в расчете процессоров. При этом, учитывая шаблон разностной 
+схемы, потребуется организация передачи значений приближений решения в узлах, 
+являющихся границами организованных подобластей.<o:p></o:p></P>
+<P class=MsoNormal 
+style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">&nbsp;<o:p></o:p></P>
+<P align=center class=MsoNormal 
+style="MARGIN-LEFT: 42.55pt; TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><!--[if gte vml 1]><v:shape 
+id=_x0000_i1037 style="HEIGHT: 249.75pt; WIDTH: 249pt" type = "#_x0000_t75" 
+coordsize = "21600,21600" alt = ""><v:imagedata src = 
+"./Лаплас.files/image013.jpg" o:href = 
+"node_que.files\image099034.jpg"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=332 height=333
+src="./Лаплас.files/image013.jpg" align=absMiddle v:shapes="_x0000_i1037"><![endif]><o:p></o:p></P>
+<P align=center class=MsoNormal 
+style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
+style="FONT-SIZE: 14pt">Рис. 80. Шаблон красно-черного 
+разбиения<o:p></o:p></SPAN></P>
+<P align=center class=MsoNormal 
+style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><SPAN 
+style="FONT-SIZE: 14pt">&nbsp;<o:p></o:p></SPAN></P>
+<P class=MsoNormal 
+style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">Заметим, что метод 
+верхней релаксации представляет собой рекуррентные вычислительные формулы, 
+затрудняющие его распараллеливание. Тем не менее, метод все же удается 
+распараллелить. Для этого разобьем все узлы в шахматном порядке на красные и 
+черные, как показано на рис. 80 (в литературе эта процедура носит название 
+красно-черного упорядочения [45, 46]). Нетрудно заметить, что для каждого цвета 
+узлов расчеты будут проводиться независимо. На первом этапе будем вычислять 
+значения сеточной функции<!--[if gte vml 1]> <v:shape id=_x0000_i1038 
+style="HEIGHT: 24pt; WIDTH: 23.25pt" type = "#_x0000_t75" coordsize = 
+"21600,21600" alt = ""><v:imagedata src = "./Лаплас.files/image014.gif" o:href = 
+"node_que.files\image099030.gif"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=31 height=32
+src="./Лаплас.files/image014.gif" align=absMiddle v:shapes="_x0000_i1038"><![endif]>в 
+красных узлах, используя значения в черных узлах на предыдущей 
+итерации:<o:p></o:p></P>
+<P class=MsoNormal 
+style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><!--[if gte vml 1]><v:shape 
+id=_x0000_i1039 style="HEIGHT: 39.75pt; WIDTH: 383.25pt" type = "#_x0000_t75" 
+coordsize = "21600,21600" alt = ""><v:imagedata src = 
+"./Лаплас.files/image015.gif" o:href = 
+"node_que.files\image099031.gif"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=511 height=53
+src="./Лаплас.files/image015.gif" align=absMiddle v:shapes="_x0000_i1039"><![endif]>.<o:p></o:p></P>
+<P class=MsoNormal 
+style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">На втором этапе 
+вычисляются значения<!--[if gte vml 1]> <v:shape id=_x0000_i1040 
+style="HEIGHT: 24pt; WIDTH: 23.25pt" type = "#_x0000_t75" coordsize = 
+"21600,21600" alt = ""><v:imagedata src = "./Лаплас.files/image014.gif" o:href = 
+"node_que.files\image099030.gif"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=31 height=32
+src="./Лаплас.files/image014.gif" align=absMiddle v:shapes="_x0000_i1040"><![endif]>в 
+черных узлах, используя значения в красных узлах, но уже новые, вычисленные на 
+первом этапе:<o:p></o:p></P>
+<P class=MsoNormal 
+style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"><!--[if gte vml 1]><v:shape 
+id=_x0000_i1041 style="HEIGHT: 39.75pt; WIDTH: 383.25pt" type = "#_x0000_t75" 
+coordsize = "21600,21600" alt = ""><v:imagedata src = 
+"./Лаплас.files/image016.gif" o:href = 
+"node_que.files\image099032.gif"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=511 height=53
+src="./Лаплас.files/image016.gif" align=absMiddle v:shapes="_x0000_i1041"><![endif]>.<o:p></o:p></P>
+<P class=MsoNormal 
+style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">Запишите в файл 
+результат выполнения параллельной программы, содержащий количество точек 
+разбиения, число задействованных процессоров, погрешность полученного численного 
+решения (аналитическое решение поставленной задачи<!--[if gte vml 1]> <v:shape 
+id=_x0000_i1042 style="HEIGHT: 20.25pt; WIDTH: 68.25pt" type = "#_x0000_t75" 
+coordsize = "21600,21600" alt = ""><v:imagedata src = 
+"./Лаплас.files/image017.gif" o:href = 
+"node_que.files\image099033.gif"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=91 height=27
+src="./Лаплас.files/image017.gif" align=absMiddle v:shapes="_x0000_i1042"><![endif]>). 
+Вычислить ускорение и эффективность параллельного алгоритма по сравнению с 
+последовательным в зависимости от количества точек разбиения 
+области.<o:p></o:p></P>
+<P class=MsoNormal 
+style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">&nbsp;<o:p></o:p></P>
+<P 
+class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P></DIV></BODY></HTML>
